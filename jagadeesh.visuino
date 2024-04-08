@@ -1,0 +1,351 @@
+{
+  "Config": {
+    "Build": {
+      "Board": "esp8266:esp8266:nodemcu:generic,baud=1500000"
+    }
+  },
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Content": "OpenWire Diagram",
+  "Units": [
+    {
+      "Type": "Diagram",
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 464,
+          "Name": "Arduino",
+          "Instance": {
+            "AnalogInput": {
+              "*": [
+                {
+                  "+": "TArduinoESP8266AnalogInputChannel"
+                }
+              ]
+            },
+            "Serial": {
+              "*": [
+                {
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.TextValue1.OutputPin"
+                      },
+                      {
+                        "ID": "__OpenWireRootUnit__.FormattedText1.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoESP8266HardwareSerial"
+                },
+                {
+                  "+": "TArduinoESP8266HardwareSerial1"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "Modules": {
+              "*": [
+                {
+                  "Operations": {
+                    "*": [
+                      {
+                        "ChannelOutputPin": {
+                          "SinkPins": [
+                            {
+                              "Name": "__OpenWireRootUnit__.FormattedText1.Elements.IntegerElement.InputPin",
+                              "ID": "__OpenWireRootUnit__.FormattedText1.Elements._Item2.InputPin"
+                            }
+                          ]
+                        },
+                        "ScanningOutputPin": {
+                          "SinkPins": [
+                            {
+                              "ID": "__OpenWireRootUnit__.DetectEdge1.InputPin"
+                            }
+                          ]
+                        },
+                        "SSIDOutputPin": {
+                          "SinkPins": [
+                            {
+                              "Name": "__OpenWireRootUnit__.FormattedText1.Elements.TextElement1.InputPin",
+                              "ID": "__OpenWireRootUnit__.FormattedText1.Elements._Item0.InputPin"
+                            }
+                          ]
+                        },
+                        "+": "TArduinoESP8266WiFiModuleScanNetworksOperation",
+                        "SignalStrengthOutputPin": {
+                          "SinkPins": [
+                            {
+                              "Name": "__OpenWireRootUnit__.FormattedText1.Elements.IntegerElement.InputPin",
+                              "ID": "__OpenWireRootUnit__.FormattedText1.Elements._Item1.InputPin"
+                            }
+                          ]
+                        },
+                        "ScanInputPin": {
+                          "SourcePins": [
+                            {
+                              "ID": "__OpenWireRootUnit__.ClockGenerator1.OutputPin"
+                            }
+                          ]
+                        },
+                        "FoundNetworkOutputPin": {
+                          "SinkPins": [
+                            {
+                              "ID": "__OpenWireRootUnit__.FormattedText1.ClockInputPin"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "HostName": "",
+                  "+": "TArduinoESP8266WiFiModule",
+                  "ESPNow": {
+                    "PrimaryKey": {
+                      "_Data": ""
+                    }
+                  },
+                  "Time": {
+                    "NetworkTime": {
+                      "Servers": {
+                        "*": [
+                          {
+                            "+": "TArduinoESP8266WiFiNetworkTimeServer1"
+                          },
+                          {
+                            "+": "TArduinoESP8266WiFiNetworkTimeServer2"
+                          },
+                          {
+                            "+": "TArduinoESP8266WiFiNetworkTimeServer3"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "AccessPoint": {
+                    "SSID": "",
+                    "Password": ""
+                  }
+                },
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoPWMConfigModule"
+                },
+                {
+                  "+": "TArduinoESP8266ProcessorModule"
+                },
+                {
+                  "+": "TArduinoESP8266WatchdogTimerModule"
+                },
+                {
+                  "+": "TArduinoESP_BootButtonModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoESP8266_NodeMCU_I2C"
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMSerial1InterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMSPI0InterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMSPI0InterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMSPI0InterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMSerial0InterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMSerial0InterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalOpenDrainPWMInterruptChannel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "NodeMCU ESP-12"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 288,
+          "Name": "ClockGenerator1",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Modules.WiFi.Operations.ScanNetworks.ScanInputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Modules._Item0.Operations._Item0.ScanInputPin"
+                }
+              ]
+            },
+            "+": "TArduinoClockGenerator"
+          },
+          "Type": "Component",
+          "Y": 304
+        },
+        {
+          "X": 784,
+          "Name": "DetectEdge1",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.TextValue1.ClockInputPin"
+                }
+              ]
+            },
+            "InputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Modules.WiFi.Operations.ScanNetworks.ScanningOutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Modules._Item0.Operations._Item0.ScanningOutputPin"
+              }
+            },
+            "+": "TArduinoDetectEdge"
+          },
+          "Type": "Component",
+          "Y": 288
+        },
+        {
+          "X": 256,
+          "Name": "TextValue1",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "ID": "__OpenWireRootUnit__.DetectEdge1.OutputPin"
+                }
+              ]
+            },
+            "Value": "\r\nScan\r\n-----------------",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial.Item[ 0 ] (9600).InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoTextValue"
+          },
+          "Type": "Component",
+          "Y": 512
+        },
+        {
+          "X": 752,
+          "Name": "FormattedText1",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Modules.WiFi.Operations.ScanNetworks.FoundNetworkOutputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Modules._Item0.Operations._Item0.FoundNetworkOutputPin"
+                }
+              ]
+            },
+            "Text": "SSID: \"%0\" Signal: %1 Channel %2",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial.Item[ 0 ] (9600).InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoFormattedText",
+            "Elements": {
+              "*": [
+                {
+                  "Name": "TextElement1",
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "Name": "__OpenWireRootUnit__.Arduino.Modules.WiFi.Operations.ScanNetworks.SSIDOutputPin",
+                        "ID": "__OpenWireRootUnit__.Arduino.Modules._Item0.Operations._Item0.SSIDOutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoFormattedTextElementText"
+                },
+                {
+                  "Name": "IntegerElement1",
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.Arduino.Modules.WiFi.Operations.ScanNetworks.SignalStrengthOutputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Modules._Item0.Operations._Item0.SignalStrengthOutputPin"
+                    }
+                  },
+                  "+": "TArduinoFormattedTextElementInteger"
+                },
+                {
+                  "Name": "IntegerElement2",
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.Arduino.Modules.WiFi.Operations.ScanNetworks.ChannelOutputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Modules._Item0.Operations._Item0.ChannelOutputPin"
+                    }
+                  },
+                  "+": "TArduinoFormattedTextElementInteger"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 624
+        }
+      ]
+    }
+  ]
+}
